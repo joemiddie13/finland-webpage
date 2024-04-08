@@ -126,3 +126,31 @@
 .news-grid-cell button {
     margin: 2px;
 }
+
+@media screen and (max-width: 800px) {
+    .dashboard {
+      width: 100%;
+      height: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px 200px 200px;
+      grid-template-areas:
+        "h h h"
+        "s s b"
+        "a a a"
+        "m c c"
+        "d d d";
+    }
+  
+  @media screen and (max-width: 600px) {
+    .dashboard {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 200px 200px 200px 200px 200px;
+      grid-template-areas:
+        "h h"
+        "s b"
+        "m c"
+        "a a"
+        "d d";
+    }
+  }
+}
